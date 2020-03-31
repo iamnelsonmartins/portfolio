@@ -3,35 +3,33 @@ import data from '../../assets/data.json'
 
 class Projects extends Component {
     componentDidMount() {
-        const projectTotal = (data.github)
-        const selectColumns = document.querySelector("#projects")
+        const projects = (data.github)
+        const projectColumn = document.querySelector("#projects")
 
-        for (let i = 0; i < projectTotal.length; i++) {
-            selectColumns.insertAdjacentHTML("beforeend",
-                `<div class="column is-one-third">
-                    <div class='projects has-text-centered'>
-                        <p class='project_title'>${projectTotal[i].name}</p>
-                        <p class='project_subtitle'>${projectTotal[i].desc}</p>
-                        <p class='project_description'>
-                            <a href="${projectTotal[i].url}" target='_blank'>code</a> | 
-                            <a href="${projectTotal[i].demo}" target='_blank'>demo</a>
+        for (let i = 0; i < projects.length; i++) {
+            projectColumn.insertAdjacentHTML("beforeend",
+                `<div class="column is-3">
+                    <div class='column-data has-text-centered'>
+                        <p class='column-data-title'>${projects[i].name}</p>
+                        <p class='column-data-subtitle'>${projects[i].desc}</p>
+                        <p class='column-data-desc'>
+                            <a href="${projects[i].url}" target='_blank'>code</a> | 
+                            <a href="${projects[i].demo}" target='_blank'>demo</a>
                         </p>
                     </div>
                 </div>`
             );
         }
     }
-
     render() {
         return (
-            <div className="container">
+            <div className='container'>
                 <h1 className='title is-3 intro'>Projects</h1>
                 <div className="columns is-multiline" id='projects'>
                 </div>
             </div>
-
-        );
+        )
     }
 }
 
-export default Projects
+export default Projects;

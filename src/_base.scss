@@ -73,15 +73,35 @@ $title-weight: normal;
             color:$darkAccent;
         }
     }
-    
-    #projects{
-        margin: 0 0 50px 0;
+
+    .intro {
+        color:$lightColor;
+        margin: 0 0 0 1rem;
     }
-    
-    .projects{
-        height:200px;
-        background-color: lighten($darkColor, 5%);
+
+    .introduction {
+        display: block;
+        font-style: italic;
+        color:$lightColor;
+        padding: 0 1rem 1rem 1rem;
+        margin: 0 2rem 2rem 2rem;
+        font-size: 1.5rem;
+
+        a{
+            color:$lightColor;
+            text-decoration: underline;
+
+            &:hover {
+                color:$darkAccent;
+
+            }
+        }
+    }
+
+    .column-data{
+        min-height:230px;
         padding: 1.5rem;
+        background-color: lighten($darkColor, 5%);
         box-shadow: 0 3px 9px rgba(0,0,0,.05);
         color:$lightColor;
 
@@ -101,81 +121,24 @@ $title-weight: normal;
         a{
             color:$lightColor; 
         }
-    
-        .project_title {
-            margin-top:15px;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-    
-        .project_subtitle {
-            font-size: 1rem;
-            font-style: italic;
-            margin: 15px 0;
-        }
-    
-        .project_description {
-            font-size: 1rem;
 
-                a:hover {
-                    color:$lightAccent;
-            }
-        }
-    }
-
-    #aboutMeLearn, #aboutMeWork{
-        margin: 0;
-    }
-
-    .intro {
-        color:$lightColor;
-        margin: 0 0 0 1rem;
-    }
-
-    .introduction {
-        display: block;
-        font-style: italic;
-        color:$lightColor;
-        padding: 0 1rem 1rem 1rem;
-        margin: 0 2rem 2rem 2rem;
-        font-size: 1.5rem;
-
-        a{
-            color:$lightColor;
-            text-decoration: underline;
-
-            &:hover {
-                color:$darkAccent;
-
-            }
-        }
-    }
-
-    .aboutMe{
-        min-height:230px;
-        background-color: lighten($darkColor, 5%);
-        padding: 1.5rem;
-        box-shadow: 0 3px 9px rgba(0,0,0,.05);
-        color:$lightColor;
-
-        &:hover {
-            background-color: $lightColor;
-            color:$darkColor;
-        }
-
-        .about_subject {
+        .column-data-title {
             margin-top:30px;
             font-size: 1rem;
             font-weight: bold;
         }
     
-        .about_local {
+        .column-data-subtitle {
             font-style: italic;
             margin: 15px 0;
         }
 
-        .about_term {
+        .column-data-desc {
             font-size: 0.8rem;
+
+            a:hover {
+                color:$lightAccent;
+            }
         }
     }
 
@@ -194,202 +157,6 @@ $title-weight: normal;
 
         .contact-info {
             color:$lightColor;
-            font-size: 0.75rem;
-        }
-
-        .column-right {
-            position: relative;
-        }
-
-        .content {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-        }
-    }
-}
-
-[data-theme="light"] {
-    #root {
-        display: flex;
-        min-height: 100vh;
-        flex-direction: column;
-        background-color: $lightColor;
-    }
-
-    #content{
-        min-height: 50vh;
-        flex: 1;
-    }
-
-    .container {
-        margin-bottom: 30px;
-        flex: 1;
-
-    
-        .title {
-            color:$darkColor;
-        }
-        .subtitle {
-            color:$darkColor;
-        }
-
-    }
-
-    nav.navbar a {
-        color:$darkColor;
-
-        &:hover {
-            color:$lightAccent;
-            text-decoration: underline;
-        }
-    }
-
-    .navbar-brand, #navigation{
-        background-color: $lightColor;
-        color:$darkColor;
-    }
-
-    a.navbar-item:focus {
-        background-color: $lightColor !important;
-    }
-    a.burger {
-        color:$darkColor
-    }
-
-    .hero h1, .hero h2 {
-        color:$darkColor
-    }
-
-    .social a{
-        color:$darkColor;
-
-        &:hover {
-            color:$lightAccent;
-        }
-    }
-    
-    #projects{
-        margin: 0 0 50px 0;
-    }
-    
-    .projects{
-        height:200px;
-        background-color:darken($lightColor, 5%);
-        padding: 1.5rem;
-        box-shadow: 0 3px 9px rgba(0,0,0,.05);
-        color:$darkColor;
-
-        &:hover {
-            background-color: $darkColor;
-            color:$lightColor;
-
-            a {
-                color:$lightColor;
-
-                a:hover {
-                    color:$darkAccent;
-                }
-            }
-        }
-
-        a{
-            color:$darkColor 
-        }
-    
-        .project_title {
-            margin-top:15px;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-    
-        .project_subtitle {
-            font-size: 1rem;
-            font-style: italic;
-            margin: 15px 0;
-        }
-    
-        .project_description {
-            font-size: 1rem;
-
-                a:hover {
-                    color:$darkAccent;
-            }
-        }
-    }
-
-    #aboutMeLearn, #aboutMeWork{
-        margin: 0;
-    }
-
-    .intro {
-        color:$darkColor;
-        margin: 0 0 0 1rem;
-    }
-
-    .introduction {
-        display: block;
-        font-style: italic;
-        color:$darkColor;
-        padding: 0 1rem 1rem 1rem;
-        margin: 0 2rem 2rem 2rem;
-        font-size: 1.5rem;
-
-        a{
-            color:$darkColor;
-            text-decoration: underline;
-
-            &:hover {
-                color:$lightAccent;
-
-            }
-        }
-    }
-
-    .aboutMe{
-        min-height:230px;
-        background-color:darken($lightColor, 5%);
-        padding: 1.5rem;
-        box-shadow: 0 3px 9px rgba(0,0,0,.05);
-        color:$darkColor;
-
-        &:hover {
-            background-color: $darkColor;
-            color:$lightColor;
-        }
-
-        .about_subject {
-            margin-top:30px;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-    
-        .about_local {
-            font-style: italic;
-            margin: 15px 0;
-        }
-
-        .about_term {
-            font-size: 0.8rem;
-        }
-    }
-
-    footer.footer {
-        background-color:darken($lightColor, 5%);
-        color:$darkColor;
-
-        a {
-            color:$darkColor;
-            margin-right: 0.5rem;
-
-            &:hover {
-                color:$lightAccent;
-            }
-        }
-
-        .contact-info {
-            color:$darkColor;
             font-size: 0.75rem;
         }
 
