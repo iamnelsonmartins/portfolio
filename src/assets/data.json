@@ -17,30 +17,9 @@
         {
             "id": 3,
             "name": "Portolio",
-            "url": "github.com",
-            "demo": "",
+            "url": "https://github.com/iamnelsonmartins/portfolio/",
+            "demo": "https://github.com/iamnelsonmartins/portfolio/",
             "desc": "The portfolio I've made for me"
-        },
-        {
-            "id": 4,
-            "name": "searchflixbbbbb",
-            "url": "github.com",
-            "demo": "",
-            "desc": "a simple desc of project"
-        },
-        {
-            "id": 5,
-            "name": "searchflixbbbbb",
-            "url": "github.com",
-            "demo": "",
-            "desc": "a simple desc of project"
-        },
-        {
-            "id": 5,
-            "name": "searchflixbbbbb",
-            "url": "github.com",
-            "demo": "",
-            "desc": "a simple desc of project"
         }
     ],
     "education": [

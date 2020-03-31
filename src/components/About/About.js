@@ -37,9 +37,10 @@ class About extends Component {
             <div className='container'>
                 <span className='introduction'>
                     Hi my name is Nelson and I am a frontend developer. Since a young age <br />
-                    I wanted to know how to make things work. Today I know. < br />
+                    I wanted to know how to make things work. Now I know. < br />
                     From HTML and CSS to Javascript. Building webpages or developing apps.< br />
-                    Get in touch with me on <a href='https://www.linkedin.com/in/nelson-martins-9924aa5b' target='_blank' rel='noopener noreferrer'>linkendin</a> or see my <a href='/projects' rel='noopener noreferrer'>projects</a>
+                    Get in touch with me on <a href='https://www.linkedin.com/in/nelson-martins-9924aa5b' target='_blank' rel='noopener noreferrer'>linkendin</a> or see my <a href='/projects' rel='noopener noreferrer'>projects</a>< br />
+                    <button href='../../assets/cv.pdf'>Download my cv</button>
                 </span>
                 <h1 className='title is-3 intro'>Learning</h1>
                 <div className="columns is-multiline" id='aboutMeLearn'>

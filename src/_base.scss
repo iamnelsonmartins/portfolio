@@ -15,17 +15,23 @@ $title-size:4rem;
 $title-weight: normal;
 
 :root {
+
     #root {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
         background-color: $darkColor;
     }
 
     #content{
-        min-height: 70vh;
+        min-height: 50vh;
+        flex: 1;
     }
 
     .container {
         margin-bottom: 30px;
-    
+        flex: 1;
+
         .title {
             color:$lightColor;
         }
@@ -206,15 +212,21 @@ $title-weight: normal;
 
 [data-theme="light"] {
     #root {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
         background-color: $lightColor;
     }
 
     #content{
-        min-height: 70vh;
+        min-height: 50vh;
+        flex: 1;
     }
 
     .container {
         margin-bottom: 30px;
+        flex: 1;
+
     
         .title {
             color:$darkColor;
