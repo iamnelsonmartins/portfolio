@@ -1,0 +1,86 @@
+{
+    "github": [
+        {
+            "id": 1,
+            "name": "Searchflix",
+            "url": "https://github.com/iamnelsonmartins/searchflix_js",
+            "demo": "https://iamnelsonmartins.github.io/searchflix_js/",
+            "desc": "Search by genre on netflix"
+        },
+        {
+            "id": 2,
+            "name": "ComponentCreator",
+            "url": "https://github.com/iamnelsonmartins/componentCreator",
+            "demo": "https://iamnelsonmartins.github.io/componentCreator/",
+            "desc": "Component Creator Helper"
+        },
+        {
+            "id": 3,
+            "name": "Portolio",
+            "url": "github.com",
+            "demo": "",
+            "desc": "The portfolio I've made for me"
+        },
+        {
+            "id": 4,
+            "name": "searchflixbbbbb",
+            "url": "github.com",
+            "demo": "",
+            "desc": "a simple desc of project"
+        },
+        {
+            "id": 5,
+            "name": "searchflixbbbbb",
+            "url": "github.com",
+            "demo": "",
+            "desc": "a simple desc of project"
+        },
+        {
+            "id": 5,
+            "name": "searchflixbbbbb",
+            "url": "github.com",
+            "demo": "",
+            "desc": "a simple desc of project"
+        }
+    ],
+    "education": [
+        {
+            "id": 1,
+            "local": "City University",
+            "subject": "Advanced<br />Javascript",
+            "term": "Jan 2020 - Mar 2020"
+        },
+        {
+            "id": 2,
+            "local": "City University",
+            "subject": "Introduction to Javascript",
+            "term": "Oct 2019 - Dec 2019"
+        },
+        {
+            "id": 3,
+            "local": "Lisbon School <br />of Design, Lisbon",
+            "subject": "Webdesign and Interactive",
+            "term": "2012-2013"
+        },
+        {
+            "id": 4,
+            "local": "Lusofona University, Lisbon",
+            "subject": "BSc Communication Design",
+            "term": "2008-2012"
+        }
+    ],
+    "working": [
+        {
+            "id": 1,
+            "company": "Re:Sources, London, UK",
+            "role": "Field Service Engineer",
+            "term": "2018-2020"
+        },
+        {
+            "id": 2,
+            "company": "Almadados, Lisbon, PT",
+            "role": "IT Technician",
+            "term": "2013-2018"
+        }
+    ]
+}

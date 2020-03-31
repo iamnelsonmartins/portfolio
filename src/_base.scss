@@ -1,0 +1,395 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap');
+
+// Global vars
+$lightColor: #FAFAFA;
+$darkColor: #242527;
+$lightAccent: #F34213;
+$darkAccent: #18F2B2;
+
+// Bulma Vars
+$family-sans-serif: 'Raleway', sans-serif;
+$widescreen-enabled: false;
+$footer-padding: 1rem 3rem;
+$title-size:4rem;
+$title-weight: normal;
+
+:root {
+    #root {
+        background-color: $darkColor;
+    }
+
+    #content{
+        min-height: 70vh;
+    }
+
+    .container {
+        margin-bottom: 30px;
+    
+        .title {
+            color:$lightColor;
+        }
+        .subtitle {
+            color:$lightColor;
+        }
+
+    }
+
+    nav.navbar a {
+        color:$lightColor;
+
+        &:hover {
+            color:$darkAccent;
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-brand, #navigation{
+        background-color: $darkColor;
+        color:$lightColor;
+    }
+
+    a.navbar-item:focus {
+        background-color: $darkColor !important;
+    }
+    button.burger {
+        color:$lightColor;
+    }
+
+    .hero h1, .hero h2 {
+        color:$lightColor
+    }
+
+    .social a{
+        color:$lightColor;
+
+        &:hover {
+            color:$darkAccent;
+        }
+    }
+    
+    #projects{
+        margin: 0 0 50px 0;
+    }
+    
+    .projects{
+        height:200px;
+        background-color: lighten($darkColor, 5%);
+        padding: 1.5rem;
+        box-shadow: 0 3px 9px rgba(0,0,0,.05);
+        color:$lightColor;
+
+        &:hover {
+            background-color: $lightColor;
+            color:$darkColor;
+
+            a {
+                color:$darkColor;
+
+                a:hover {
+                    color:$lightAccent;
+                }
+            }
+        }
+
+        a{
+            color:$lightColor; 
+        }
+    
+        .project_title {
+            margin-top:15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    
+        .project_subtitle {
+            font-size: 1rem;
+            font-style: italic;
+            margin: 15px 0;
+        }
+    
+        .project_description {
+            font-size: 1rem;
+
+                a:hover {
+                    color:$lightAccent;
+            }
+        }
+    }
+
+    #aboutMeLearn, #aboutMeWork{
+        margin: 0;
+    }
+
+    .intro {
+        color:$lightColor;
+        margin: 0 0 0 1rem;
+    }
+
+    .introduction {
+        display: block;
+        font-style: italic;
+        color:$lightColor;
+        padding: 0 1rem 1rem 1rem;
+        margin: 0 2rem 2rem 2rem;
+        font-size: 1.5rem;
+
+        a{
+            color:$lightColor;
+            text-decoration: underline;
+
+            &:hover {
+                color:$darkAccent;
+
+            }
+        }
+    }
+
+    .aboutMe{
+        min-height:230px;
+        background-color: lighten($darkColor, 5%);
+        padding: 1.5rem;
+        box-shadow: 0 3px 9px rgba(0,0,0,.05);
+        color:$lightColor;
+
+        &:hover {
+            background-color: $lightColor;
+            color:$darkColor;
+        }
+
+        .about_subject {
+            margin-top:30px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    
+        .about_local {
+            font-style: italic;
+            margin: 15px 0;
+        }
+
+        .about_term {
+            font-size: 0.8rem;
+        }
+    }
+
+    footer.footer {
+        background-color:darken($darkColor, 5%);
+        color:$lightColor;
+
+        a {
+            color:$lightColor;
+            margin-right: 0.5rem;
+
+            &:hover {
+                color:$darkAccent;
+            }
+        }
+
+        .contact-info {
+            color:$lightColor;
+            font-size: 0.75rem;
+        }
+
+        .column-right {
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+[data-theme="light"] {
+    #root {
+        background-color: $lightColor;
+    }
+
+    #content{
+        min-height: 70vh;
+    }
+
+    .container {
+        margin-bottom: 30px;
+    
+        .title {
+            color:$darkColor;
+        }
+        .subtitle {
+            color:$darkColor;
+        }
+
+    }
+
+    nav.navbar a {
+        color:$darkColor;
+
+        &:hover {
+            color:$lightAccent;
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-brand, #navigation{
+        background-color: $lightColor;
+        color:$darkColor;
+    }
+
+    a.navbar-item:focus {
+        background-color: $lightColor !important;
+    }
+    a.burger {
+        color:$darkColor
+    }
+
+    .hero h1, .hero h2 {
+        color:$darkColor
+    }
+
+    .social a{
+        color:$darkColor;
+
+        &:hover {
+            color:$lightAccent;
+        }
+    }
+    
+    #projects{
+        margin: 0 0 50px 0;
+    }
+    
+    .projects{
+        height:200px;
+        background-color:darken($lightColor, 5%);
+        padding: 1.5rem;
+        box-shadow: 0 3px 9px rgba(0,0,0,.05);
+        color:$darkColor;
+
+        &:hover {
+            background-color: $darkColor;
+            color:$lightColor;
+
+            a {
+                color:$lightColor;
+
+                a:hover {
+                    color:$darkAccent;
+                }
+            }
+        }
+
+        a{
+            color:$darkColor 
+        }
+    
+        .project_title {
+            margin-top:15px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    
+        .project_subtitle {
+            font-size: 1rem;
+            font-style: italic;
+            margin: 15px 0;
+        }
+    
+        .project_description {
+            font-size: 1rem;
+
+                a:hover {
+                    color:$darkAccent;
+            }
+        }
+    }
+
+    #aboutMeLearn, #aboutMeWork{
+        margin: 0;
+    }
+
+    .intro {
+        color:$darkColor;
+        margin: 0 0 0 1rem;
+    }
+
+    .introduction {
+        display: block;
+        font-style: italic;
+        color:$darkColor;
+        padding: 0 1rem 1rem 1rem;
+        margin: 0 2rem 2rem 2rem;
+        font-size: 1.5rem;
+
+        a{
+            color:$darkColor;
+            text-decoration: underline;
+
+            &:hover {
+                color:$lightAccent;
+
+            }
+        }
+    }
+
+    .aboutMe{
+        min-height:230px;
+        background-color:darken($lightColor, 5%);
+        padding: 1.5rem;
+        box-shadow: 0 3px 9px rgba(0,0,0,.05);
+        color:$darkColor;
+
+        &:hover {
+            background-color: $darkColor;
+            color:$lightColor;
+        }
+
+        .about_subject {
+            margin-top:30px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    
+        .about_local {
+            font-style: italic;
+            margin: 15px 0;
+        }
+
+        .about_term {
+            font-size: 0.8rem;
+        }
+    }
+
+    footer.footer {
+        background-color:darken($lightColor, 5%);
+        color:$darkColor;
+
+        a {
+            color:$darkColor;
+            margin-right: 0.5rem;
+
+            &:hover {
+                color:$lightAccent;
+            }
+        }
+
+        .contact-info {
+            color:$darkColor;
+            font-size: 0.75rem;
+        }
+
+        .column-right {
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
