@@ -13,7 +13,7 @@ class Footer extends Component {
                 <div className='columns'>
                     <div className='column is-one-fifth'>
                         <strong className='is-small contact-info'>Email</strong>
-                        <p className='contact-info'>hi@nelsonmartins.com</p>
+                        <p className='contact-info'>hi@iamnelsonmartins.com</p>
                     </div>
                     <div className="column column-right has-text-right is-hidden-mobile">
                         <div className='content'>
