@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import data from '../../assets/data.json'
 import pdf from '../../assets/curriculum.pdf'
 

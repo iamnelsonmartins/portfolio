@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{font-family:'GillSans';}
-	.st2{font-size:50px;}
-</style>
-<rect width="100" height="100"/>
-<text transform="matrix(1 0 0 1 10.962 67)" class="st0 st1 st2">NM</text>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><defs><style>.cls-1{fill:#fff;}</style></defs><rect width="512" height="512"/><path class="cls-1" d="M41.14,145.8475H92.1313L149.556,255.31l21.77,48.3532h1.35c-2.3445-23.2838,0-54.1173,0-80.0622V145.8475h41.0558V365.9406H162.7412L105.3148,256.1974,83.5463,208.1245h-1.35c2.3446,24.2764,1.35,53.76,1.35,79.7044v78.1117H41.14Z" transform="translate(0)"/><path class="cls-1" d="M265.6848,145.8475h54.29l35.7055,97.7913c4.4121,12.9889,8.2636,27.0908,12.6724,40.6354h1.3487c4.4121-13.5446,8.1449-27.6465,12.5537-40.6354L416.85,145.8475h54.29V365.9406H432.19V285.1711c0-21.4553-2.3445-53.4825,0-74.7779h-1.352l-18.0572,52.0843-31.1154,84.3176h-27.62L322.87,262.4775l-17.5626-52.0843h-1.3487c2.3446,21.2954,0,53.3226,0,74.7779v80.77H265.6848Z" transform="translate(0)"/></svg>
