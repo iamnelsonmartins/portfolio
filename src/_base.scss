@@ -13,9 +13,9 @@ $widescreen-enabled: false;
 $footer-padding: 1rem 3rem;
 $title-size:4rem;
 $title-weight: normal;
+$section-padding: 1rem 1.5rem;
 
 :root {
-
     #root {
         display: flex;
         min-height: 100vh;
@@ -32,7 +32,8 @@ $title-weight: normal;
         margin-bottom: 30px;
         flex: 1;
 
-        .title {
+        .title_index {
+            font-size: 3.5rem;
             color:$lightColor;
         }
         .subtitle {
@@ -95,6 +96,20 @@ $title-weight: normal;
                 color:$darkAccent;
 
             }
+        }
+    }
+
+    a.downloadBtn{
+        background-color: $lightColor;
+        color:$darkColor;
+        padding: 1rem;
+        font-size:0.85rem;
+        border-radius:3px;
+        text-decoration: none;
+    
+        &:hover {
+            color:$darkAccent;
+            background-color: lighten($darkColor, 5%);
         }
     }
 
