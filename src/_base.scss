@@ -187,3 +187,176 @@ $section-padding: 1rem 1.5rem;
         }
     }
 }
+
+[data-theme="light"] {
+    #root {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        background-color: $lightColor;
+    }
+
+    #content{
+        min-height: 50vh;
+        flex: 1;
+    }
+
+    .container {
+        margin-bottom: 30px;
+        flex: 1;
+
+        .title_index {
+            font-size: 3.5rem;
+            color:$darkColor;
+        }
+        .subtitle {
+            color:$darkColor
+        }
+
+    }
+
+    nav.navbar a {
+        color:$darkColor;
+
+        &:hover {
+            color:$lightAccent;
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-brand, #navigation{
+        background-color: $lightColor;
+        color:$darkColor;
+    }
+
+    a.navbar-item:focus {
+        background-color: $lightColor !important;
+    }
+    button.burger {
+        color:$darkColor;
+    }
+
+    .hero h1, .hero h2 {
+        color:$darkColor
+    }
+
+    .social a{
+        color:$darkColor;
+
+        &:hover {
+            color:$lightAccent;
+        }
+    }
+
+    .intro {
+        color:$darkColor;
+        margin: 0 0 0 1rem;
+    }
+
+    .introduction {
+        display: block;
+        font-style: italic;
+        color:$darkColor;
+        padding: 0 1rem 1rem 1rem;
+        margin: 0 2rem 2rem 2rem;
+        font-size: 1.5rem;
+
+        a{
+            color:$darkColor;
+            text-decoration: underline;
+
+            &:hover {
+                color:$lightAccent;
+
+            }
+        }
+    }
+
+    a.downloadBtn{
+        background-color: $darkColor;
+        color:$lightColor;
+        padding: 1rem;
+        font-size:0.85rem;
+        border-radius:3px;
+        text-decoration: none;
+    
+        &:hover {
+            color:$lightAccent;
+            background-color:darken($lightColor, 10%);
+        }
+    }
+
+    .column-data{
+        min-height:230px;
+        padding: 1.5rem;
+        background-color:darken($lightColor, 5%);
+        box-shadow: 0 3px 9px rgba(0,0,0,.05);
+        color:$darkColor;
+
+        &:hover {
+            background-color: $darkColor;
+            color:$lightColor;
+
+            a {
+                color:$lightColor;
+
+                a:hover {
+                    color:$darkAccent;
+                }
+            }
+        }
+
+        a{
+            color:$darkColor; 
+        }
+
+        .column-data-title {
+            margin-top:30px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    
+        .column-data-subtitle {
+            font-style: italic;
+            margin: 15px 0;
+        }
+
+        .column-data-desc {
+            font-size: 0.8rem;
+
+            a:hover {
+                color:$darkAccent;
+            }
+        }
+    }
+
+    footer.footer {
+        background-color:darken($lightColor, 10%);
+        color:$darkColor;
+
+        a {
+            color:$darkColor;
+            margin-right: 0.5rem;
+
+            &:hover {
+                color:$lightAccent;
+            }
+        }
+
+        .contact-info {
+            color:$darkColor;
+            font-size: 0.75rem;
+        }
+
+        .column-right {
+            position: relative;
+        }
+
+        .content {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
