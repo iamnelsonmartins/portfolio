@@ -51,8 +51,11 @@ class Nav extends Component {
                         <div className="navbar-brand">
                             <Link to='/' className="navbar-item is-hidden-desktop" href="home"><span className="navbar-item-name"><img src={Logo} alt='logo' /></span>
                             </Link>
-                            <a className="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                                data-target="navigation">
+                            <a
+                                className="navbar-burger burger"
+                                aria-label="menu"
+                                aria-expanded="false"
+                                data-target="navigation" href='#'>
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
                                 <span aria-hidden="true"></span>
