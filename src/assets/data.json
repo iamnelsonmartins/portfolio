@@ -20,6 +20,13 @@
             "url": "https://github.com/iamnelsonmartins/portfolio/",
             "demo": "https://iamnelsonmartins.com",
             "desc": "The portfolio I've made for me"
+        },
+        {
+            "id": 4,
+            "name": "Weather App",
+            "url": "https://github.com/iamnelsonmartins/weather-app",
+            "demo": "https://iamnelsonmartins.github.io/weather-app/",
+            "desc": "Weather app made with react, bulma and openweather API"
         }
     ],
     "education": [
