@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust } from '@fortawesome/free-solid-svg-icons'
 
@@ -86,7 +86,7 @@ class Nav extends Component {
                                     </Link>
                                 </div>
                                 <div className="navbar-end">
-                                    <a href='javascript:void(0);' onClick={this.toggleDarkMode} className="navbar-item is-hidden-mobile">
+                                    <a href='#' onClick={this.toggleDarkMode} className="navbar-item is-hidden-mobile">
                                         {adjustSymbol}
                                     </a>
                                 </div>
