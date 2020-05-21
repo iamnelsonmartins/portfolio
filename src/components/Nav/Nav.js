@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust } from '@fortawesome/free-solid-svg-icons'
 
@@ -51,7 +51,7 @@ class Nav extends Component {
 
     render() {
         return (
-            <Router>
+            <>
                 <header className="section">
                     <div className="container">
                         <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
@@ -97,7 +97,7 @@ class Nav extends Component {
                 <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />
                 <Route path="/" exact component={Content} />
-            </Router>
+            </>
         )
     }
 }
