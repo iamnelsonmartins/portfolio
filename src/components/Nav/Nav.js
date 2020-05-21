@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-import Logo from '../../images/logo.svg'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust } from '@fortawesome/free-solid-svg-icons'
+
+import Content from '../Content/Content'
+import Projects from '../Projects/Projects'
+import About from '../About/About'
+
+import Logo from '../../images/logo.svg'
+
 const adjustSymbol = <FontAwesomeIcon icon={faAdjust} />
 
 class Nav extends Component {
@@ -45,48 +51,53 @@ class Nav extends Component {
 
     render() {
         return (
-            <header className="section">
-                <div className="container">
-                    <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
-                        <div className="navbar-brand">
-                            <Link to='/' className="navbar-item is-hidden-desktop" href="home"><span className="navbar-item-name"><img src={Logo} alt='logo' /></span>
-                            </Link>
-                            <a
-                                className="navbar-burger burger"
-                                aria-label="menu"
-                                aria-expanded="false"
-                                data-target="navigation" href='#'>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                                <span aria-hidden="true"></span>
-                            </a>
-                        </div>
-                        <div id="navigation" className="navbar-menu">
-                            <div className="navbar-start">
-
-                                <Link to='/' className="navbar-item is-hidden-mobile">
-                                    <span className="navbar-item-name"><img src={Logo} alt='logo' /></span>
+            <Router>
+                <header className="section">
+                    <div className="container">
+                        <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
+                            <div className="navbar-brand">
+                                <Link to='/' className="navbar-item is-hidden-desktop" href="home"><span className="navbar-item-name"><img src={Logo} alt='logo' /></span>
                                 </Link>
-
-                                <a href='#' onClick={this.toggleDarkMode} className="navbar-item is-hidden-desktop">dark/light mode</a>
-
-                                <Link to='/projects' className="navbar-item">
-                                    <span className="navbar-item-name">Projects</span>
-                                </Link>
-
-                                <Link to='/about' className="navbar-item">
-                                    <span className="navbar-item-name">About</span>
-                                </Link>
-                            </div>
-                            <div className="navbar-end">
-                                <a href='#' onClick={this.toggleDarkMode} className="navbar-item is-hidden-mobile">
-                                    {adjustSymbol}
+                                <a
+                                    className="navbar-burger burger"
+                                    aria-label="menu"
+                                    aria-expanded="false"
+                                    data-target="navigation" href='#'>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
+                                    <span aria-hidden="true"></span>
                                 </a>
                             </div>
-                        </div>
-                    </nav>
-                </div>
-            </header >
+                            <div id="navigation" className="navbar-menu">
+                                <div className="navbar-start">
+
+                                    <Link to='/' className="navbar-item is-hidden-mobile">
+                                        <span className="navbar-item-name"><img src={Logo} alt='logo' /></span>
+                                    </Link>
+
+                                    <a href='#' onClick={this.toggleDarkMode} className="navbar-item is-hidden-desktop">dark/light mode</a>
+
+                                    <Link to='/projects' className="navbar-item">
+                                        <span className="navbar-item-name">Projects</span>
+                                    </Link>
+
+                                    <Link to='/about' className="navbar-item">
+                                        <span className="navbar-item-name">About</span>
+                                    </Link>
+                                </div>
+                                <div className="navbar-end">
+                                    <a href='javascript:void(0);' onClick={this.toggleDarkMode} className="navbar-item is-hidden-mobile">
+                                        {adjustSymbol}
+                                    </a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header >
+                <Route path="/about" component={About} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/" exact component={Content} exact />
+            </Router>
         )
     }
 }
