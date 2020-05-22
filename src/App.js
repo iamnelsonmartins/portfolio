@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { createBrowserHistory } from "history";
 import './App.scss';
 
 import Nav from './components/Nav/Nav'
@@ -9,9 +8,6 @@ import About from './components/About/About'
 
 import Content from './components/Content/Content'
 import Projects from './components/Projects/Projects'
-
-const history = createBrowserHistory()
-
 
 class App extends Component {
   render() {
