@@ -16,7 +16,7 @@ const history = createBrowserHistory()
 class App extends Component {
   render() {
     return (
-      <Router history={history}>
+      <Router>
         <Nav />
         <Route path="/about" component={About} />
         <Route path="/projects" component={Projects} />
