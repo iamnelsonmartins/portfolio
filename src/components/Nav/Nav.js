@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust } from '@fortawesome/free-solid-svg-icons'
-
-import Content from '../Content/Content'
-import Projects from '../Projects/Projects'
-import About from '../About/About'
 
 import Logo from '../../images/logo.svg'
 
@@ -94,9 +90,6 @@ class Nav extends Component {
                         </nav>
                     </div>
                 </header >
-                <Route path="/about" component={About} />
-                <Route path="/projects" component={Projects} />
-                <Route path="/" exact component={Content} />
             </>
         )
     }
