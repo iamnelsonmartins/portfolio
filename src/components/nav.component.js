@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAdjust } from '@fortawesome/free-solid-svg-icons'
 
-import Logo from '../../images/logo.svg'
+import Logo from '../images/logo.svg'
 
 const adjustSymbol = <FontAwesomeIcon icon={faAdjust} />
 

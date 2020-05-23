@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.scss';
 
-import Nav from './components/Nav/Nav'
-import Footer from './components/Footer/Footer'
-import About from './components/About/About'
+import Nav from './components/nav.component'
+import Footer from './components/footer.component'
+import About from './components/about.component'
 
-import Content from './components/Content/Content'
-import Projects from './components/Projects/Projects'
+import Content from './components/content.component'
+import Projects from './components/projects.component'
 
 class App extends Component {
   render() {
