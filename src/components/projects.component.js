@@ -14,12 +14,14 @@ export default class Projects extends Component {
     }
 
     componentDidMount() {
-        const URL = 'https://gist.githubusercontent.com/iamnelsonmartins/e0be90d392913703df48d16dbfd25eef/raw/ece8e3b7916895c4313582f3ad21eb31179f7d72/data.json'
+        // const URL = 'https://gist.githubusercontent.com/iamnelsonmartins/e0be90d392913703df48d16dbfd25eef/raw/ece8e3b7916895c4313582f3ad21eb31179f7d72/data.json'
+
+        const URL = 'http://wizard-unicorn.glitch.me/projects'
 
         axios.get(URL)
             .then(res => {
                 this.setState({
-                    projects: res.data.projects
+                    projects: res.data
                 });
             })
             .catch((error) => {
@@ -36,7 +38,7 @@ export default class Projects extends Component {
                 `<div class="column is-4">
                     <div class='column-data has-text-centered'>
                         <p class='column-data-title'>${projects[i].name}</p>
-                        <p class='column-data-subtitle'>${projects[i].desc}</p>
+                        <p class='column-data-subtitle'>${projects[i].description}</p>
                         <p class='column-data-desc'>
                             <a href="${projects[i].url}" target='_blank'>code</a> | 
                             <a href="${projects[i].demo}" target='_blank'>demo</a>

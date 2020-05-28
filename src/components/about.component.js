@@ -16,15 +16,19 @@ export default class About extends Component {
     }
 
     componentDidMount() {
-        const URL = 'https://gist.githubusercontent.com/iamnelsonmartins/e0be90d392913703df48d16dbfd25eef/raw/ece8e3b7916895c4313582f3ad21eb31179f7d72/data.json'
+        const education = 'http://wizard-unicorn.glitch.me/education'
+        const experience = 'http://wizard-unicorn.glitch.me/experience'
 
-        axios.get(URL)
-            .then(res => {
+        const requestEducation = axios.get(education);
+        const requestExperience = axios.get(experience);
+
+        axios.all([requestEducation, requestExperience])
+            .then(axios.spread((...responses) => {
                 this.setState({
-                    education: res.data.education,
-                    experience: res.data.experience
+                    education: responses[0].data,
+                    experience: responses[1].data
                 });
-            })
+            }))
             .catch((error) => {
                 console.log(error);
             })
