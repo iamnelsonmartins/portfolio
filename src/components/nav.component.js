@@ -58,7 +58,7 @@ class Nav extends Component {
                                     className="navbar-burger burger"
                                     aria-label="menu"
                                     aria-expanded="false"
-                                    data-target="navigation" href='/#'>
+                                    data-target="navigation" href='#'>
                                     <span aria-hidden="true"></span>
                                     <span aria-hidden="true"></span>
                                     <span aria-hidden="true"></span>
