@@ -16,8 +16,8 @@ export default class About extends Component {
     }
 
     componentDidMount() {
-        const education = 'http://wizard-unicorn.glitch.me/education'
-        const experience = 'http://wizard-unicorn.glitch.me/experience'
+        const education = 'https://wizard-unicorn.glitch.me/education'
+        const experience = 'https://wizard-unicorn.glitch.me/experience'
 
         const requestEducation = axios.get(education);
         const requestExperience = axios.get(experience);
