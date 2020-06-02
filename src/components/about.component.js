@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import pdf from '../assets/curriculum.pdf'
 import axios from 'axios'
-require('dotenv').config();
 
 export default class About extends Component {
     constructor(props) {
         super(props)
         this.state = {
             education: [],
-            experience: []
+            experience: [],
+            loading: true
         }
         this.expFunction = this.expFunction.bind(this)
         this.eduFunction = this.eduFunction.bind(this)
@@ -26,7 +26,8 @@ export default class About extends Component {
             .then(axios.spread((...responses) => {
                 this.setState({
                     education: responses[0].data,
-                    experience: responses[1].data
+                    experience: responses[1].data,
+                    loading: false
                 });
             }))
             .catch((error) => {
@@ -69,6 +70,7 @@ export default class About extends Component {
     }
 
     render() {
+        const { loading } = this.state
         return (
             <section className='section' id='content'>
                 <div className='container'>
@@ -82,11 +84,21 @@ export default class About extends Component {
                     </span>
                     <h1 className='title is-3 intro'>Learning</h1>
                     <div className="columns is-multiline" id='aboutMeLearn'>
-                        {this.expFunction()}
+                        {
+                            loading ?
+                                <progress className='progress' max='100'>Loading</progress>
+                                :
+                                this.expFunction()
+                        }
                     </div>
                     <h1 className='title is-3 intro'>Work Experience</h1>
                     <div className="columns is-multiline" id='aboutMeWork'>
-                        {this.eduFunction()}
+                        {
+                            loading ?
+                                <progress className='progress' max='100'>Loading</progress>
+                                :
+                                this.eduFunction()
+                        }
                     </div>
                 </div>
             </section>

@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-require('dotenv').config();
-
-//import data from '../assets/data.json'
 
 export default class Projects extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            projects: []
+            projects: [],
+            loading: true
         }
         this.projFunction = this.projFunction.bind(this)
     }
@@ -19,7 +17,8 @@ export default class Projects extends Component {
         axios.get(URL)
             .then(res => {
                 this.setState({
-                    projects: res.data
+                    loading: false,
+                    projects: res.data,
                 });
             })
             .catch((error) => {
@@ -48,12 +47,18 @@ export default class Projects extends Component {
     }
 
     render() {
+        const { loading } = this.state
         return (
             <section className='section' id='content'>
                 <div className='container'>
                     <h1 className='title is-3 intro'>Projects</h1>
                     <div className="columns is-multiline" id='projects'>
-                        {this.projFunction()}
+                        {
+                            loading ?
+                                <progress className='progress' max='100'>Loading</progress>
+                                :
+                                this.projFunction()
+                        }
                     </div>
                 </div>
             </section>
