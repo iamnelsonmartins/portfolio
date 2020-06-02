@@ -14,8 +14,6 @@ export default class Projects extends Component {
     }
 
     componentDidMount() {
-        // const URL = 'https://gist.githubusercontent.com/iamnelsonmartins/e0be90d392913703df48d16dbfd25eef/raw/ece8e3b7916895c4313582f3ad21eb31179f7d72/data.json'
-
         const URL = 'https://wizard-unicorn.glitch.me/projects'
 
         axios.get(URL)
