@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ProjectList from './projects.list.component'
 import axios from 'axios'
 
 export default class Projects extends Component {
@@ -32,17 +33,7 @@ export default class Projects extends Component {
           <h1 className='title is-3 intro'>Projects</h1>
           <div className="columns is-multiline" id='projects'>
             {loading ? <progress className='progress' max='100'>Loading</progress> :
-              projects.map((project, index) =>
-                <div className="column is-4" key={index}>
-                  <div className='column-data has-text-centered'>
-                    <p className='column-data-title'>{project.name}</p>
-                    <p className='column-data-subtitle'>{project.description}</p>
-                    <p className='column-data-desc'>
-                      <a href={project.url} target='_blank' rel="noopener noreferrer">code</a> | <a href={project.demo} target='_blank' rel="noopener noreferrer">demo</a>
-                    </p>
-                  </div>
-                </div>
-              )}
+              <ProjectList data={projects} />}
           </div>
         </div>
       </section>

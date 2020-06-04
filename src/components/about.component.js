@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { EduList, ExpList } from './about.list.component'
 import { Link } from "react-router-dom";
 import pdf from '../assets/curriculum.pdf'
 import axios from 'axios'
@@ -11,7 +12,6 @@ export default class About extends Component {
       experience: [],
       loading: true
     }
-    this.expFunction = this.expFunction.bind(this)
   }
 
   componentDidMount() {
@@ -34,40 +34,6 @@ export default class About extends Component {
       })
   }
 
-  expFunction = () => {
-    const { experience } = this.state
-    const experienceColumns = document.querySelector("#aboutMeWork")
-
-    for (let i = 0; i < experience.length; i++) {
-      experienceColumns.insertAdjacentHTML("beforeend",
-        `<div class="column is-3">
-                    <div class='column-data has-text-centered'>
-                        <p class='column-data-title'>${experience[i].role}</p>
-                        <p class='column-data-subtitle'>${experience[i].company}</p>
-                        <p class='column-data-desc'>${experience[i].term}</p>
-                    </div>
-                </div>`
-      );
-    }
-  }
-
-  // eduFunction = () => {
-  //   const { education } = this.state
-  //   const educationColumns = document.querySelector("#aboutMeLearn")
-
-  //   for (let i = 0; i < education.length; i++) {
-  //     educationColumns.insertAdjacentHTML("beforeend",
-  //       `<div class="column is-3">
-  //                   <div class='column-data has-text-centered'>
-  //                       <p class='column-data-title'>${education[i].subject}</p>
-  //                       <p class='column-data-subtitle'>${education[i].local}</p>
-  //                       <p class='column-data-desc'>${education[i].term}</p>
-  //                   </div>
-  //               </div>`
-  //     );
-  //   }
-  // }
-
   render() {
     const { loading, experience, education } = this.state
     return (
@@ -86,32 +52,16 @@ export default class About extends Component {
             {
               loading ?
                 <progress className='progress' max='100'>Loading</progress>
-                :
-                education.map((edu, index) =>
-                  <div class="column is-3" key={index}>
-                    <div class='column-data has-text-centered'>
-                      <p class='column-data-title'>{edu.subject}</p>
-                      <p class='column-data-subtitle'>{edu.local}</p>
-                      <p class='column-data-desc'>{edu.term}</p>
-                    </div>
-                  </div>
-                )}
+                : <EduList data={education} />
+            }
           </div>
           <h1 className='title is-3 intro'>Work Experience</h1>
           <div className="columns is-multiline">
             {
               loading ?
                 <progress className='progress' max='100'>Loading</progress>
-                :
-                experience.map((exp, index) =>
-                  <div class="column is-3" key={index}>
-                    <div class='column-data has-text-centered'>
-                      <p class='column-data-title'>{exp.role}</p>
-                      <p class='column-data-subtitle'>{exp.company}</p>
-                      <p class='column-data-desc'>{exp.term}</p>
-                    </div>
-                  </div>
-                )}
+                : <ExpList data={experience} />
+            }
           </div>
         </div>
       </section >
