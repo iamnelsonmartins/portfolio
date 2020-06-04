@@ -5,7 +5,6 @@ import './App.scss';
 import Nav from './components/nav.component'
 import Footer from './components/footer.component'
 import About from './components/about.component'
-
 import Content from './components/content.component'
 import Projects from './components/projects.component'
 

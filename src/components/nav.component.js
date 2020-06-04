@@ -52,7 +52,10 @@ class Nav extends Component {
                     <div className="container">
                         <nav className="navbar is-transparent" role="navigation" aria-label="main navigation">
                             <div className="navbar-brand">
-                                <Link to='/' className="navbar-item is-hidden-desktop"><span className="navbar-item-name"><img src={Logo} alt='logo' /></span>
+                                <Link to='/' className="navbar-item is-hidden-desktop">
+                                    <span className="navbar-item-name">
+                                        <img src={Logo} alt='logo' />
+                                    </span>
                                 </Link>
                                 <a
                                     className="navbar-burger burger"
@@ -68,7 +71,9 @@ class Nav extends Component {
                                 <div className="navbar-start">
 
                                     <Link to='/' className="navbar-item is-hidden-mobile">
-                                        <span className="navbar-item-name"><img src={Logo} alt='logo' /></span>
+                                        <span className="navbar-item-name">
+                                            <img src={Logo} alt='logo' />
+                                        </span>
                                     </Link>
 
                                     <a href='#' onClick={this.toggleDarkMode} className="navbar-item is-hidden-desktop">dark/light mode</a>
