@@ -76,7 +76,7 @@ class Nav extends Component {
                                         </span>
                                     </Link>
 
-                                    <a href='#' onClick={this.toggleDarkMode} className="navbar-item is-hidden-desktop">dark/light mode</a>
+                                    <a onClick={this.toggleDarkMode} className="navbar-item is-hidden-desktop">dark/light mode</a>
 
                                     <Link to='/projects' className="navbar-item">
                                         <span className="navbar-item-name">Projects</span>
@@ -87,7 +87,7 @@ class Nav extends Component {
                                     </Link>
                                 </div>
                                 <div className="navbar-end">
-                                    <a href='#' onClick={this.toggleDarkMode} className="navbar-item is-hidden-mobile">
+                                    <a onClick={this.toggleDarkMode} className="navbar-item is-hidden-mobile">
                                         {adjustSymbol}
                                     </a>
                                 </div>
