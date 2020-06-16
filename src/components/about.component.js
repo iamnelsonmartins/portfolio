@@ -2,40 +2,19 @@ import React, { Component } from 'react';
 import { EduList, ExpList } from './about.list.component'
 import { Link } from "react-router-dom";
 import pdf from '../assets/curriculum.pdf'
-import axios from 'axios'
+import data from '../assets/data.json'
 
 export default class About extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      education: [],
-      experience: [],
-      loading: true
+      education: data.education,
+      experience: data.experience,
     }
   }
 
-  componentDidMount() {
-    const education = 'https://wizard-unicorn.glitch.me/education'
-    const experience = 'https://wizard-unicorn.glitch.me/experience'
-
-    const requestEducation = axios.get(education);
-    const requestExperience = axios.get(experience);
-
-    axios.all([requestEducation, requestExperience])
-      .then(axios.spread((...responses) => {
-        this.setState({
-          education: responses[0].data,
-          experience: responses[1].data,
-          loading: false
-        });
-      }))
-      .catch((error) => {
-        console.log(error);
-      })
-  }
-
   render() {
-    const { loading, experience, education } = this.state
+    const { experience, education } = this.state
     return (
       <section className='section' id='content'>
         <div className='container'>
@@ -49,19 +28,11 @@ export default class About extends Component {
           </span>
           <h1 className='title is-3 intro'>Learning</h1>
           <div className="columns is-multiline">
-            {
-              loading ?
-                <progress className='progress' max='100'>Loading</progress>
-                : <EduList data={education} />
-            }
+            <EduList data={education} />
           </div>
           <h1 className='title is-3 intro'>Work Experience</h1>
           <div className="columns is-multiline">
-            {
-              loading ?
-                <progress className='progress' max='100'>Loading</progress>
-                : <ExpList data={experience} />
-            }
+            <ExpList data={experience} />
           </div>
         </div>
       </section >

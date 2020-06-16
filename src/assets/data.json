@@ -3,37 +3,37 @@
         {
             "id": 1,
             "name": "Searchflix",
-            "url": "https://github.com/iamnelsonmartins/searchflix_js",
-            "demo": "https://iamnelsonmartins.github.io/searchflix_js/",
-            "desc": "Search by genre on netflix"
+            "url": "https://github.com/iamnelsonmartins/searchflix",
+            "demo": "https://iamnelsonmartins.github.io/searchflix/",
+            "description": "Search by genre on netflix"
         },
         {
             "id": 2,
             "name": "ComponentCreator",
             "url": "https://github.com/iamnelsonmartins/componentCreator",
             "demo": "https://iamnelsonmartins.github.io/componentCreator/",
-            "desc": "Component Creator Helper"
+            "description": "Component Creator Helper"
         },
         {
             "id": 3,
             "name": "Portolio",
             "url": "https://github.com/iamnelsonmartins/portfolio/",
             "demo": "https://iamnelsonmartins.com",
-            "desc": "The portfolio I've made for me"
+            "description": "The portfolio I've made for me"
         },
         {
             "id": 4,
             "name": "Weather App",
             "url": "https://github.com/iamnelsonmartins/weather-app",
             "demo": "https://iamnelsonmartins.github.io/weather-app/",
-            "desc": "Weather app made with react, bulma and openweather API"
+            "description": "Weather app made with react, bulma and openweather API"
         }
     ],
     "education": [
         {
             "id": 1,
             "local": "City University",
-            "subject": "Advanced<br />Javascript",
+            "subject": "Advanced Javascript",
             "term": "Jan 2020 - Mar 2020"
         },
         {
@@ -44,7 +44,7 @@
         },
         {
             "id": 3,
-            "local": "Lisbon School <br />of Design, Lisbon",
+            "local": "Lisbon School  of Design, Lisbon",
             "subject": "Webdesign and Interactive",
             "term": "2012-2013"
         },
