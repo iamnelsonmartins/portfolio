@@ -1,6 +1,12 @@
 {
     "github": [
         {
+            "name": "Color Shader",
+            "url": "https://github.com/iamnelsonmartins/color-shader",
+            "demo": "https://iamnelsonmartins.github.io/color-shader/",
+            "description": "Color generator with ligher and darker version"
+        },
+        {
             "name": "Portolio",
             "url": "https://github.com/iamnelsonmartins/portfolio/",
             "demo": "https://iamnelsonmartins.com",
