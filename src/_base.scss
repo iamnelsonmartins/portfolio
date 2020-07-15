@@ -121,8 +121,14 @@ $section-padding: 1rem 1.5rem;
         color:$lightColor;
 
         &:hover {
+            animation: fade2White ease 3s;
             background-color: $lightColor;
             color:$darkColor;
+
+            @keyframes fade2White {
+                0% {background-color:lighten($darkColor, 5%)}
+                100% {background-color:$lightColor;}
+                }
 
             a {
                 color:$darkColor;
@@ -300,8 +306,14 @@ $section-padding: 1rem 1.5rem;
         color:$darkColor;
 
         &:hover {
+            animation: fade2white ease 3s;
             background-color: $darkColor;
             color:$lightColor;
+
+            @keyframes fade2white {
+                0% {background-color:darken($lightColor, 5%)}
+                100% {background-color:$darkColor;}
+                }
 
             a {
                 color:$lightColor;
