@@ -13,7 +13,6 @@ function Content() {
                 <div className='hero-body'>
                     <div className='container'>
                         <h1 className='title_index'>Nelson Martins, frontend developer and jedi apprentice.</h1>
-                        <h2 className='subtitle'>living day by day, bit by bit</h2>
                     </div>
                 </div>
             </section>
